@@ -15,5 +15,5 @@ workflow {
 		.from([1,2,3,4,5])
 		.set{ch_vals}
 
-	ABC(ch_vals)
+	ABC(ch_vals, params.sleep_time)
 }
