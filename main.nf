@@ -2,10 +2,11 @@
 process ABC {
 	input:
 	val test_val
+	val sleep_time
 
 	script:
 	"""
-	sleep 45
+	sleep ${sleep_time}
 	"""
 }
 
